@@ -1,0 +1,30 @@
+document.querySelector('#add-money-btn').addEventListener('click', () => {
+  // 1 - bank Account get
+  const bankAccount = getValueFromInput('add-money-bank')
+  if (bankAccount === 'Select a Bank') {
+    alert('Please select a bank')
+    return
+  }
+
+  // 2 - get bank account number
+  const accno = getValueFromInput('add-money-number')
+  if (accno.length != 11) {
+    alert('invalid acc no')
+    return
+  }
+  // 3 - set new balance
+  const amount = getValueFromInput('add-money-amount')
+  const currentBalance = getBalance()
+  const newBalance = currentBalance + Number(amount)
+  console.log(newBalance);
+
+  // 4 - verify pin and set balance
+  const pin = getValueFromInput('add-money-pin')
+  if (pin == '4433') {
+    setBalance(newBalance)
+    alert(`${amount} add suceessfully oin ${bankAccount} ${new Date()}`)
+  } else {
+    alert('Invalid Pin')
+    return
+  }
+})

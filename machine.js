@@ -1,5 +1,9 @@
 console.log("Machine Added");
 
+
+
+
+// CashOut Section
 // machine id -> input value
 function getValueFromInput(id) {
   const input = document.querySelector(`#${id}`);
