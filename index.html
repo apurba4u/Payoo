@@ -15,6 +15,24 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body class="outfit min-h-screen max-w-md bg-base-200 mx-auto">
-  <h1>Apurba Ovi</h1>
+  <div class="logo w-[200px] mx-auto pt-32">
+    <img src="./assets/Logo-full.png">
+  </div>
+
+  <div class="form pt-11">
+    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow mx-auto rounded-2xl">
+      <div class="card-body">
+        <fieldset class="fieldset">
+          <label class="label text-neutral-900 font-bold">Mobile Number</label>
+          <input type="tel" class="input rounded-full bg-base-200" placeholder="Enter your number" maxlength="16" minlength="11"/>
+          <br>
+          <label class="label text-neutral-900 font-bold">4 Digit Pin</label>
+          <input type="password" class="input rounded-full bg-base-200" placeholder="Enter 4 Digit Pin" maxlength="4" minlength="4"/>
+          <button class="btn btn-primary mt-4 rounded-full">Login</button>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
 </body>
 </html>
