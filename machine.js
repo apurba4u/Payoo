@@ -30,10 +30,12 @@ function setBalance(value) {
 function showOnly(id) {
   const addMoney = document.querySelector("#add-money")
   const cashout = document.querySelector("#cashout")
+  const history = document.querySelector("#history")
   
   // shobai k hide kore dao
   addMoney.classList.add('hidden')
   cashout.classList.add('hidden')
+  history.classList.add('hidden')
 
   // id wala ta ke show koro tumi
   const selected = document.querySelector(`#${id}`);
