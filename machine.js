@@ -41,3 +41,13 @@ function showOnly(id) {
   const selected = document.querySelector(`#${id}`);
   selected.classList.remove('hidden')
 }
+
+function bonusCoupon(txt) {
+  txt = txt.toLowerCase();
+
+  if (txt.startsWith("ovi") && txt.length === 5) {
+    return Number(txt.slice(3));   // last 2 digit
+  }
+
+  return "Wrong Value";
+}
