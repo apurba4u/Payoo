@@ -33,6 +33,7 @@ function showOnly(id) {
   const history = document.querySelector("#history")
   const sendmoney = document.querySelector("#sendmoney")
   const getbonus = document.querySelector("#getbonus")
+  const payBill = document.querySelector("#pay-bill")
   
   // shobai k hide kore dao
   addMoney.classList.add('hidden')
@@ -40,6 +41,7 @@ function showOnly(id) {
   history.classList.add('hidden')
   getbonus.classList.add('hidden')
   sendmoney.classList.add('hidden')
+  payBill.classList.add('hidden')
 
   // id wala ta ke show koro tumi
   const selected = document.querySelector(`#${id}`);
