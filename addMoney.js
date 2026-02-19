@@ -29,8 +29,13 @@ document.querySelector('#add-money-btn').addEventListener('click', () => {
     const newHistory = document.createElement('div')
     // 3 - new div e innerHTML add korbo
     newHistory.innerHTML = `
-    <div class="transaction-card p-5 bg-base-100 mb-3">
-    ${amount} add suceessfully oin ${bankAccount}, acc-no ${accno} at ${new Date()}
+    <div class="transaction-card p-5 bg-base-100 mb-3 flex items-center">
+      <img src="./assets/opt-1.png" class="w-10 h-10 mr-2">
+      <div>
+        <h2 class="font-semibold text-[#080808b3]">Add Money ${bankAccount}</h2>
+        <h4 class="text-[#080808b3] font-[12px]">${getCurrentTime()}</h4>
+      </div>
+      <i class="fa-solid fa-ellipsis rotate-90 ml-40 mr-5"></i>
     </div>
     `
     // 4 - history-container e new div append korbo

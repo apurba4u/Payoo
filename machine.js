@@ -31,11 +31,15 @@ function showOnly(id) {
   const addMoney = document.querySelector("#add-money")
   const cashout = document.querySelector("#cashout")
   const history = document.querySelector("#history")
+  const sendmoney = document.querySelector("#sendmoney")
+  const getbonus = document.querySelector("#getbonus")
   
   // shobai k hide kore dao
   addMoney.classList.add('hidden')
   cashout.classList.add('hidden')
   history.classList.add('hidden')
+  getbonus.classList.add('hidden')
+  sendmoney.classList.add('hidden')
 
   // id wala ta ke show koro tumi
   const selected = document.querySelector(`#${id}`);
@@ -50,4 +54,14 @@ function bonusCoupon(txt) {
   }
 
   return "Wrong Value";
+}
+// get time and date
+function getCurrentTime() {
+  const now = new Date();
+  const time = now.toLocaleTimeString("en-US", {
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: true
+  });
+  return `Today ${time}`;
 }

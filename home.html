@@ -48,7 +48,7 @@
         <img src="./assets/opt-3.png" alt="">
         <p class="text-[#080808b3] text-[14px]">Transfer Money</p>
       </button>
-      <button class="btn flex-col h-full py-4 btn-primary btn-soft">
+      <button onclick="showOnly('getbonus')" class="btn flex-col h-full py-4 btn-primary btn-soft">
         <img src="./assets/opt-4.png" alt="">
         <p class="text-[#080808b3] text-[14px]">Get Bonus</p>
       </button>
@@ -64,7 +64,7 @@
   </section>
 
   <!-- Add Money Section -->
-  <section id="add-money" class="w-11/12 mx-auto py-5">
+  <section id="add-money" class="w-11/12 mx-auto py-5 hidden">
     <h2 class="text-xl font-bold mb-2">Add Money</h2>
     <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow mx-auto rounded-2xl">
       <div class="card-body">
@@ -174,7 +174,10 @@
   </section>
   <!-- Transaction -->
   <section id="history" class="w-11/12 mx-auto py-5 hidden">
-    <h2 class="text-xl font-bold mb-5">Transactions</h2>
+    <div class="flex w-full  justify-between">
+      <h2 class="text-xl font-bold mb-5">Transaction History</h2>
+      <h4 class="text-[#080808b3] text-[14px]">View All</h4>
+    </div>
     <div id="history-container">
     </div>
   </section>

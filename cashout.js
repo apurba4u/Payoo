@@ -30,8 +30,13 @@ document.querySelector("#cashout-btn").addEventListener("click", () => {
     const newHistory = document.createElement('div')
     // 3 - new div e innerHTML add korbo
     newHistory.innerHTML = `
-    <div class="transaction-card p-5 bg-base-100 mb-3">
-    Cashout  ${cashoutAmount} TK suceess to ${cashoutNumber} at ${new Date()}
+    <div class="transaction-card p-5 bg-base-100 mb-3 flex items-center">
+      <img src="./assets/opt-2.png" class="w-10 h-10 mr-2">
+      <div>
+        <h2 class="font-semibold text-[#080808b3]">Cashout</h2>
+        <h4 class="text-[#080808b3] font-[12px]">${getCurrentTime()}</h4>
+      </div>
+      <i class="fa-solid fa-ellipsis rotate-90 ml-40 mr-5"></i>
     </div>
     `
     // 4 - history-container e new div append korbo

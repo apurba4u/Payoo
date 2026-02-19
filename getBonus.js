@@ -22,9 +22,13 @@ document.querySelector("#get-bonus-btn").addEventListener('click', () => {
     const newHistory = document.createElement('div')
     // 3 - new div e innerHTML add korbo
     newHistory.innerHTML = `
-    <div class="transaction-card p-5 bg-base-100 mb-3">
-    ${getCoupon} successfully apply ,
-    new Balance is ${newBalance}
+    <div class="transaction-card p-5 bg-base-100 mb-3 flex items-center">
+      <img src="./assets/opt-4.png" class="w-10 h-10 mr-2">
+      <div>
+        <h2 class="font-semibold text-[#080808b3]">Get ${couponValue}% increment</h2>
+        <h4 class="text-[#080808b3] font-[12px]">${getCurrentTime()}</h4>
+      </div>
+      <i class="fa-solid fa-ellipsis rotate-90 ml-40 mr-5"></i>
     </div>
     `
     // 4 - history-container e new div append korbo
